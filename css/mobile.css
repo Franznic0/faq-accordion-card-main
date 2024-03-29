@@ -1,0 +1,45 @@
+@media (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+        width: min(90%, 400px);
+    }    
+    /* image */
+    .image {
+        display: grid;
+        grid-template-areas: 'center';
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 6rem;
+        background-image: url(/images/bg-pattern-mobile.svg);
+        background-size: 65%;
+        background-position: top;
+        overflow: visible;
+    }
+
+    #woman {
+        grid-area: center;
+        place-self: center;
+        transform: translate(0, -5.5rem);
+        width: 75%;
+    }
+    #box{
+        grid-area: center;
+        place-self: center;
+        transform: translate(-4rem, -4.3rem);
+    }
+    /* faq section */
+    .faq{
+        width: 100%;
+        margin: auto;
+        padding: 2rem 1rem;
+    }
+    .title{
+        font-size: 1.2em;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 2em;
+    }
+}

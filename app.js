@@ -9,7 +9,6 @@ const show = () => {
             
             // show answer
             let answer = this.nextElementSibling;
-            console.log(answer);
             answer.classList.toggle('active');
         });
     };
